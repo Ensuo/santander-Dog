@@ -1,0 +1,13 @@
+<div class="image-grid">
+    <mat-grid-list cols="5" rowHeight="300px" [gutterSize]="'20px'">
+        <mat-grid-tile *ngFor="let image of dogImages">
+            <img loading="lazy" mat-card-image class="dogImage" src={{image.url}} (click)="print()">
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<div class="button-container">
+    <button mat-raised-button (click)="addMore()" >Carregar mais cachorros!</button>
+</div>
+
+
