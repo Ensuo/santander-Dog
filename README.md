@@ -47,13 +47,4 @@ Execute `npm list` para ver todas as dependências instaladas.
 ## Uso
 - A página inicial exibe uma grade de imagens de cachorros.
 - Clique em uma imagem para visualizá-la em mais detalhes.
-- A barra de navegação permite que os usuários explorem diferentes categorias de imagens de cachorros.
-
-## Status do Build
-
-[![Status do Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-repo-link)
-
----
-
-Sinta-se à vontade para modificar este README para melhor se adequar ao seu projeto!
 
