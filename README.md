@@ -1,27 +1,60 @@
-# SantanderDog
+# Nome do Projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Um site simples feito em Angular 16 para exibir imagens de cachorros. O site oferece uma interface visualmente agradável e fácil de usar para navegar por diversas imagens de cachorros.
 
-## Development server
+## Capturas de Tela
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+(Adicione capturas de tela aqui fazendo o upload delas no seu repositório e vinculando-as.)
 
-## Code scaffolding
+## Instalação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pré-requisitos
+- Node.js (Versão recomendada: 16.x ou superior)
+- Angular CLI (Versão recomendada: 16.x)
 
-## Build
+### Passos
+1. Clone o repositório:
+   ```sh
+   git clone <repository-url>
+   cd <project-directory>
+   ```
+2. Instale as dependências:
+   ```sh
+   npm install
+   ```
+3. Execute a aplicação:
+   ```sh
+   ng serve
+   ```
+4. Abra o navegador e acesse `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tecnologias
+- **Angular 16** - Framework utilizado para construir a aplicação web
+- **TypeScript** - Linguagem de programação usada no desenvolvimento
+- **HTML & CSS** - Marcação e estilização
+- **HttpClientModule** - Utilizado para fazer requisições HTTP e buscar imagens de cachorros
 
-## Running unit tests
+## Dependências / Bibliotecas
+- `@angular/core`
+- `@angular/common`
+- `@angular/platform-browser`
+- `@angular/router`
+- `@angular/animations`
+- `@angular/http`
+- `rxjs`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Execute `npm list` para ver todas as dependências instaladas.
 
-## Running end-to-end tests
+## Uso
+- A página inicial exibe uma grade de imagens de cachorros.
+- Clique em uma imagem para visualizá-la em mais detalhes.
+- A barra de navegação permite que os usuários explorem diferentes categorias de imagens de cachorros.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Status do Build
 
-## Further help
+[![Status do Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-repo-link)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+Sinta-se à vontade para modificar este README para melhor se adequar ao seu projeto!
+
