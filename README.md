@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Site expositivo de imagens de cachorro
 
 Um site simples feito em Angular 16 para exibir imagens de cachorros. O site oferece uma interface visualmente agradável e fácil de usar para navegar por diversas imagens de cachorros.
 
