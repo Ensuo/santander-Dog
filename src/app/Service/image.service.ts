@@ -21,8 +21,10 @@ export class ImageService {
 
   constructor(private http: HttpClient) {}
 
-  getImages(limit: number, has_breeds: boolean): Observable<DogInfo[]> {
-    return this.http.get<DogInfo[]>(this.url + `?limit=${limit}&has_breeds=${has_breeds?1:0}`, this.httpOptions).pipe(
+  //Função recebe como parâmetros a quantidade de imagens a serem solicitadas e
+  //re
+  getImages(limit: number): Observable<DogInfo[]> {
+    return this.http.get<DogInfo[]>(this.url + `?limit=${limit}&has_breeds=1`, this.httpOptions).pipe(
       tap(_ => console.log(_))
     ); 
   }

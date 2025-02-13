@@ -21,21 +21,21 @@ export class GridComponent implements OnInit{
   constructor(private imageService: ImageService){}
 
   ngOnInit(): void{
-    this.getDogImages(15, true);
-    this.getMoreDogImages(15, true);
+    this.getDogImages(15);
+    this.getMoreDogImages(15);
   }
 
-  getDogImages(limit: number, has_breeds: boolean): void {
-    this.imageService.getImages(limit, has_breeds).subscribe(dogImages => this.dogImages = dogImages);
+  getDogImages(limit: number): void {
+    this.imageService.getImages(limit).subscribe(dogImages => this.dogImages = dogImages);
   }
 
-  getMoreDogImages(limit: number, has_breeds: boolean): void{
-    this.imageService.getImages(limit, has_breeds).subscribe(bonusImages => this.bonusImages = bonusImages);
+  getMoreDogImages(limit: number): void{
+    this.imageService.getImages(limit).subscribe(bonusImages => this.bonusImages = bonusImages);
   }
 
   addMore(): void{
     this.dogImages = this.dogImages.concat(this.bonusImages);
-    this.getMoreDogImages(15, true);
+    this.getMoreDogImages(15);
   }
 
   print(): void{
