@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 
 import { DogInfo } from '../Models/dogInfo';  
 
@@ -22,8 +22,8 @@ export class ImageService {
   constructor(private http: HttpClient) {}
 
   //Função recebe como parâmetros a quantidade de imagens a serem solicitadas e
-  //re
-  getImages(limit: number): Observable<DogInfo[]> {
+  //recebe da api dados no formato json, os quais possuem como propriedade a url da imagem.
+  getImageData(limit: number): Observable<DogInfo[]> {
     return this.http.get<DogInfo[]>(this.url + `?limit=${limit}&has_breeds=1`, this.httpOptions).pipe(
       tap(_ => console.log(_))
     ); 
