@@ -32,7 +32,6 @@ Um site simples feito em Angular 16 para exibir imagens de cachorros. O site ofe
 - **Angular 16** - Framework utilizado para construir a aplicação web
 - **TypeScript** - Linguagem de programação usada no desenvolvimento
 - **HTML & CSS** - Marcação e estilização
-- **HttpClientModule** - Utilizado para fazer requisições HTTP e buscar imagens de cachorros
 
 ## Dependências / Bibliotecas
 - `@angular/core`
