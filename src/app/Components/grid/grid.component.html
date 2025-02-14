@@ -1,7 +1,7 @@
 <div class="image-grid">
     <mat-grid-list cols="5" rowHeight="300px" [gutterSize]="'20px'">
         <mat-grid-tile *ngFor="let image of dogImages">
-            <img loading="lazy" mat-card-image class="dogImage" src={{image.url}} (click)="print()">
+            <img loading="lazy" mat-card-image class="dogImage" src={{image.url}}>
         </mat-grid-tile>
     </mat-grid-list>
 </div>

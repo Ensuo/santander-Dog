@@ -1,6 +1,6 @@
 /*
-  Este componente representa a seção central do site. 
-  Possui apenas um template, sem funcionalidades específicas.
+ *Este componente representa a seção central do site. 
+ *Possui apenas um template, sem funcionalidades específicas.
 */
 
 import { Component } from '@angular/core';

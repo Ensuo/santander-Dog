@@ -5,6 +5,7 @@
 */
 
 import {Component} from '@angular/core';
+
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DomSanitizer } from '@angular/platform-browser';
 import {MatIconRegistry, MatIconModule} from '@angular/material/icon';

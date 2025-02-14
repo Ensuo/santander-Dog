@@ -1,9 +1,9 @@
 
 /* 
-  Este componente representa a grid utilizada para apresentar as imagens dos cachorros, no formato 5x3.
-  As variáveis dogImages e bonusImages são utilizadas para armazenar os dados obtidos pela API, sendo 
-  respectivamente as imagens carregadas e as que ainda vão ser carregadas. 
-  Todas as funções presentes são utilizadas para requisitar mais imagens da API e alterar a grid atual.
+ *Este componente representa a grid utilizada para apresentar as imagens dos cachorros, no formato 5x3.
+ *As variáveis dogImages e bonusImages são utilizadas para armazenar os dados obtidos pela API, sendo 
+ *respectivamente as imagens carregadas e as que ainda vão ser carregadas. 
+ *Todas as funções presentes são utilizadas para requisitar mais imagens da API e alterar a grid atual.
 */
 
 import { Component, OnInit} from '@angular/core';
@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatButtonModule} from '@angular/material/button'
+
 
 import { ImageService } from 'src/app/Service/image.service';
 import { DogInfo } from 'src/app/Models/dogInfo';
