@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
+import {catchError, map, tap } from 'rxjs/operators';
 
 import { DogInfo } from '../Models/dogInfo';  
 
@@ -21,9 +21,33 @@ export class ImageService {
 
   constructor(private http: HttpClient) {}
 
-  getImages(limit: number, has_breeds: boolean): Observable<DogInfo[]> {
-    return this.http.get<DogInfo[]>(this.url + `?limit=${limit}&has_breeds=${has_breeds?1:0}`, this.httpOptions).pipe(
-      tap(_ => console.log(_))
+  /** 
+   * Função responsável pelos requests das imagens na API
+   * 
+   * @param limit - quantidade de imagens sendo solicitadas
+   */
+  
+  getImageData(limit: number): Observable<DogInfo[]> {
+    return this.http.get<DogInfo[]>(this.url + `?limit=${limit}&has_breeds=1`, this.httpOptions)
+      .pipe(
+        catchError(this.handleError<DogInfo[]>('getImageData', []))
     ); 
   }
+  
+  /**
+   * 
+   * @param operation - Nome da operação que falhou
+   * @param result - Valor opcional, retornado como o resultado do tipo Observable 
+   */
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+  
+      console.error(error); 
+      console.log(`${operation} failed: ${error.message}`);
+  
+      return of(result as T);
+    };
+  }
 }
+
+

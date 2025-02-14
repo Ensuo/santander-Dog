@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, Sanitizer, inject } from '@angular/core';
+/* 
+  Este componente define um cabeçalho que exibe uma barra de ferramentas 
+  com um ícone SVG personalizado. O ícone SVG é registrado dinamicamente 
+  para ser utilizado no template. 
+*/
+
+import {Component} from '@angular/core';
+
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DomSanitizer } from '@angular/platform-browser';
 import {MatIconRegistry, MatIconModule} from '@angular/material/icon';
