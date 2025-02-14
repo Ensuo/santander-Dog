@@ -22,6 +22,9 @@ Um site simples feito em Angular 16 para exibir imagens de cachorros. O site ofe
    ```sh
    npm install
    ```
+
+3. Obtenha uma API_KEY no site https://www.thedogapi.com/, e a coloque em um dotenv, tal como no arquivo .env.example
+   
 3. Execute a aplicação:
    ```sh
    ng serve
