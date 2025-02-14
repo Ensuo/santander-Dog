@@ -4,7 +4,7 @@ Um site simples feito em Angular 16 para exibir imagens de cachorros. O site ofe
 
 ## Capturas de Tela
 
-(Adicione capturas de tela aqui fazendo o upload delas no seu repositório e vinculando-as.)
+![alt-text](https://github.com/Ensuo/santander-Dog/blob/main/Screenshot%20from%202025-02-14%2002-16-38.png)
 
 ## Instalação
 
