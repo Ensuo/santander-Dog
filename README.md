@@ -15,8 +15,8 @@ Um site simples feito em Angular 16 para exibir imagens de cachorros. O site ofe
 ### Passos
 1. Clone o repositório:
    ```sh
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/Ensuo/santander-Dog
+   cd santander-Dog
    ```
 2. Instale as dependências:
    ```sh
@@ -38,13 +38,6 @@ Um site simples feito em Angular 16 para exibir imagens de cachorros. O site ofe
 - `@angular/common`
 - `@angular/platform-browser`
 - `@angular/router`
-- `@angular/animations`
 - `@angular/http`
 - `rxjs`
-
-Execute `npm list` para ver todas as dependências instaladas.
-
-## Uso
-- A página inicial exibe uma grade de imagens de cachorros.
-- Clique em uma imagem para visualizá-la em mais detalhes.
 
