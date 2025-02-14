@@ -18,17 +18,15 @@ Um site simples feito em Angular 16 para exibir imagens de cachorros. O site ofe
    git clone https://github.com/Ensuo/santander-Dog
    cd santander-Dog
    ```
-2. Obtenha uma API_KEY no site https://www.thedogapi.com/, e a coloque em um dotenv, tal como no arquivo .env.example
-
-3. Instale as dependências:
+2. Instale as dependências:
    ```sh
    npm install
    ```   
-4. Execute a aplicação:
+3. Execute a aplicação:
    ```sh
    ng serve
    ```
-5. Abra o navegador e acesse `http://localhost:4200/`.
+4. Abra o navegador e acesse `http://localhost:4200/`.
 
 ## Tecnologias
 - **Angular 16** - Framework utilizado para construir a aplicação web
