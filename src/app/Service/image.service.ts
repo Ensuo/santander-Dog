@@ -1,16 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { Observable, of } from 'rxjs';
-import {catchError, map, tap } from 'rxjs/operators';
+import {catchError} from 'rxjs/operators';
 
 import { DogInfo } from '../Models/dogInfo';  
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ImageService {
-  private url: string = `https://api.thedogapi.com/v1/images/search`; 
-  private api_key = 'live_T0TPZV8utf05MBb6y6GWI2d33Qw5S2vaa7bhU8EluJjhiyWzgMgzbseBdATV81ry';
+  private url: string = "https://api.thedogapi.com/v1/images/search"; 
+  private api_key = environment.API_KEY;
 
   httpOptions = {
     headers: new HttpHeaders({
